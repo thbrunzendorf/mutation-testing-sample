@@ -15,8 +15,7 @@ public class PaymentAuthorisationCheckerTest {
 
     @Test
     public void paymentByInitiatorWithLimitMoreThanAmountDoesNotNeedApproval() throws Exception {
-        User supervisor = User.withNameAndLimit("liz", Money.withAmount(500, 0));
-        User initiator = User.withNameAndLimitAndSupervisor("dave", Money.withAmount(200, 0), supervisor);
+        User initiator = User.withNameAndLimit("dave", Money.withAmount(200, 0));
         Payment payment = new Payment(Money.withAmount(123, 45), initiator);
 
         PaymentAuthorisationChecker checker = new PaymentAuthorisationChecker();
