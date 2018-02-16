@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by Thorsten on 14.05.2017.
  */
-public class PaymentAuthorisationCheckerTest {
+public class PaymentAuthorisationCheckerJUnit4Test {
 
     @Test
     public void paymentByInitiatorWithLimitMoreThanAmountDoesNotNeedApproval() throws Exception {
