@@ -3,15 +3,15 @@ package de.thbrunzendorf.payment.authorisation;
 import de.thbrunzendorf.payment.value.Money;
 import de.thbrunzendorf.payment.value.Payment;
 import de.thbrunzendorf.payment.value.User;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Created by Thorsten on 14.05.2017.
  */
-public class PaymentAuthorisationCheckerJUnit4Test {
+public class PaymentAuthorisationCheckerTest {
 
     @Test
     public void paymentByInitiatorWithLimitMoreThanAmountDoesNotNeedApproval() throws Exception {
